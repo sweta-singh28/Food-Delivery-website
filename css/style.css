@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* CSS Variables */
 :root{
@@ -13,7 +16,9 @@
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0px;
+    /* position: relative; */
 }
 
 #navbar::before{
@@ -126,9 +131,6 @@
    font-family: cursive;
    font-size: 15px;
 }
-#services{}
-#services{}
-#services{}
 
 /* Client Section */
 #client-section{
@@ -153,7 +155,9 @@
   padding: 28px;   
 }
 #clients img{
-    height: 90px;
+    height: 70px;
+
+    
 }
 
 /* Contact Section */
@@ -172,6 +176,35 @@
 
 }
 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    font-family: cursive;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
 
 /* Utility Class */
 .h-primary{
